@@ -1,14 +1,38 @@
+# Dependencies
+node_modules/
+.env
+.env.local
+
+# Build
+dist/
+build/
+.cache/
 _site
 .bundle
 .sass-cache
 .jekyll-cache
 .jekyll-metadata
-.DS_store
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+npm-debug.log*
+
+# Ruby/Jekyll
 .ruby-version
 .tweet-cache
 Gemfile.lock
 assets/libs/
-node_modules/
 vendor
-.idea
 .venv
