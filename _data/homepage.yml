@@ -1,0 +1,281 @@
+# CardioMind AI Lab homepage content
+#
+# This is the editorial source of truth for repeatable homepage sections.
+# Editors normally only need to change this file and upload media to
+# assets/img/content/. See CONTENT_PUBLISHING.md for the publishing workflow.
+#
+# Rules shared by all sections:
+# - `enabled: true` publishes an item; `false` keeps it as a draft.
+# - Dates are quoted and use YYYY-MM-DD so YAML does not convert their type.
+# - Internal URLs must start with `/`; templates should render them with
+#   `relative_url`. External URLs must include https://.
+# - Keep every `id` unique and stable after publication.
+
+settings:
+  section_limits:
+    announcements: 5
+    updates: 6
+    videos: 3
+    articles: 3
+    products: 4
+  carousel_interval_ms: 6000
+  default_cover: /assets/img/content/default-cover.svg
+  contact_email: ""
+
+announcements:
+  - id: research-talk-chen-xiaoya-2026-08
+    title: CardioMind AI 科研面对面｜陈晓雅
+    summary: AI-ECG 的分类与回归：如何识别低 LVEF 并发现早期风险？
+    date: "2026-08-28"
+    end_date: ""
+    label: 活动回顾
+    image: /assets/img/content/default-cover.svg
+    image_alt: CardioMind AI 科研面对面活动封面
+    url: ""
+    cta: 查看回顾
+    featured: true
+    enabled: true
+
+  - id: research-talk-pei-yuran-2026-08
+    title: CardioMind AI 科研面对面｜裴育冉
+    summary: 单次窦律 ECG 预测房颤风险，AI 是否真正带来临床增量价值？
+    date: "2026-08-21"
+    end_date: ""
+    label: 活动回顾
+    image: /assets/img/content/default-cover.svg
+    image_alt: CardioMind AI 科研面对面活动封面
+    url: ""
+    cta: 查看回顾
+    featured: true
+    enabled: true
+
+  - id: research-talk-guo-nannan-2026-08
+    title: CardioMind AI 科研面对面｜郭南楠
+    summary: 蒽环类治疗后新发低 LVEF，AI-ECG 能否成为前置筛查工具？
+    date: "2026-08-13"
+    end_date: ""
+    label: 活动回顾
+    image: /assets/img/content/default-cover.svg
+    image_alt: CardioMind AI 科研面对面活动封面
+    url: ""
+    cta: 查看回顾
+    featured: true
+    enabled: true
+
+updates:
+  - id: website-content-system
+    title: 官网内容发布系统上线
+    summary: 活动、文章、视频、产品和团队账号现在可通过统一数据文件持续更新。
+    date: "2026-09-02"
+    category: 网站更新
+    url: ""
+    enabled: true
+
+social_accounts:
+  - id: github
+    platform: GitHub
+    account_name: CardioMind-AI
+    description: 关注团队开源项目与代码更新。
+    url: https://github.com/CardioMind-AI
+    icon: fa-brands fa-github
+    qr_image: ""
+    color: "#181717"
+    enabled: true
+
+  - id: wechat
+    platform: 微信公众号
+    account_name: CardioMind AI
+    description: 团队推文、活动通知与研究解读。
+    url: ""
+    icon: fa-brands fa-weixin
+    qr_image: /assets/img/content/social/wechat-official.jpg
+    color: "#07C160"
+    enabled: true
+
+  - id: wechat-video
+    platform: 视频号
+    account_name: CardioMindAI
+    description: 视频访谈、活动回顾与研究讲解。
+    url: ""
+    icon: fa-solid fa-play
+    qr_image: /assets/img/content/social/wechat-video.jpg
+    color: "#FA9D3B"
+    enabled: true
+
+  - id: bilibili
+    platform: 哔哩哔哩
+    account_name: CardioMindAI
+    description: 观看团队访谈、课程与项目讲解视频。
+    url: ""
+    icon: fa-brands fa-bilibili
+    qr_image: /assets/img/content/social/bilibili.jpg
+    color: "#00AEEC"
+    enabled: true
+
+  - id: douyin
+    platform: 抖音
+    account_name: CardioMind AI
+    description: "抖音号：45927383013"
+    url: ""
+    icon: fa-brands fa-tiktok
+    qr_image: /assets/img/content/social/douyin.png
+    color: "#111111"
+    enabled: true
+
+  - id: xiaohongshu
+    platform: 小红书
+    account_name: CardioMind AI
+    description: "小红书号：26485919201"
+    url: ""
+    icon: fa-solid fa-book-open
+    qr_image: /assets/img/content/social/xiaohongshu.jpg
+    color: "#FF2442"
+    enabled: true
+
+  - id: zhihu
+    platform: 知乎
+    account_name: CardioMind AI
+    description: 临床 AI 科研问答与深度文章。
+    url: ""
+    icon: fa-brands fa-zhihu
+    qr_image: /assets/img/content/social/zhihu.jpg
+    color: "#1772F6"
+    enabled: true
+
+videos:
+  - id: video-ep03-low-lvef
+    title: AI-ECG 的分类与回归：如何识别低 LVEF？
+    summary: 陈晓雅从论文设计、分类阈值与外部验证出发，讨论 AI-ECG 的临床边界。
+    published_at: "2026-08-28"
+    platform: 团队视频
+    presenter: 陈晓雅
+    duration: "07:19"
+    cover: /assets/img/content/default-cover.svg
+    cover_alt: 科研面对面第三期视频封面
+    watch_url: ""
+    embed_url: ""
+    featured: true
+    enabled: true
+
+  - id: video-ep02-af-risk
+    title: 单次窦律 ECG 预测房颤风险，AI 有增量价值吗？
+    summary: 裴育冉围绕筛查与预测、AUC 的解读以及科研工具共创展开讨论。
+    published_at: "2026-08-21"
+    platform: 团队视频
+    presenter: 裴育冉
+    duration: "08:20"
+    cover: /assets/img/content/default-cover.svg
+    cover_alt: 科研面对面第二期视频封面
+    watch_url: ""
+    embed_url: ""
+    featured: true
+    enabled: true
+
+  - id: video-ep01-anthracycline
+    title: 蒽环类治疗后，AI-ECG 能否成为前置筛查工具？
+    summary: 郭南楠从真实临床问题出发，讨论模型指标、适用人群与临床价值。
+    published_at: "2026-08-13"
+    platform: 团队视频
+    presenter: 郭南楠
+    duration: "15:46"
+    cover: /assets/img/content/default-cover.svg
+    cover_alt: 科研面对面第一期视频封面
+    watch_url: ""
+    embed_url: ""
+    featured: true
+    enabled: true
+
+articles:
+  - id: article-ep03-low-lvef
+    title: AI-ECG 如何识别低 LVEF 并发现早期风险？
+    excerpt: 从 12 导联 ECG 的分类与回归任务出发，拆解阈值、泛化性和临床应用边界。
+    published_at: "2026-08-28"
+    category: 科研面对面
+    authors: CardioMind AI Lab
+    cover: /assets/img/content/default-cover.svg
+    cover_alt: 第三期科研面对面文章封面
+    url: ""
+    source: CardioMind AI Lab
+    featured: true
+    enabled: true
+
+  - id: article-ep02-af-risk
+    title: 从 AI-ECG 房颤风险分层看临床增量价值
+    excerpt: 区分风险预测与筛查，理解外部验证、SHAP 解释与工具共创。
+    published_at: "2026-08-21"
+    category: 科研面对面
+    authors: CardioMind AI Lab
+    cover: /assets/img/content/default-cover.svg
+    cover_alt: 第二期科研面对面文章封面
+    url: ""
+    source: CardioMind AI Lab
+    featured: true
+    enabled: true
+
+  - id: article-ep01-research-scene
+    title: 临床 AI 科研面对面：把真实问题带回科研现场
+    excerpt: 连接临床、科研与算法三种语言，从真实问题、原始证据和可复用方法出发。
+    published_at: "2026-08-13"
+    category: 品牌首发
+    authors: CardioMind AI Lab
+    cover: /assets/img/content/default-cover.svg
+    cover_alt: 第一期科研面对面文章封面
+    url: ""
+    source: CardioMind AI Lab
+    featured: true
+    enabled: true
+
+products:
+  - id: final-month-workbench
+    name: 期末月工作台
+    tagline: 面向高强度学习与交付阶段的任务协作工作台。
+    description: 当前处于原型共创阶段，持续收集真实使用场景与工作流反馈。
+    status: 原型共创中
+    status_key: beta
+    tags:
+      - 工作台
+      - 效率工具
+    logo: /assets/img/content/default-cover.svg
+    logo_alt: 期末月工作台产品封面
+    product_url: ""
+    docs_url: ""
+    repository_url: ""
+    cta: 参与共创
+    featured: true
+    enabled: true
+
+  - id: medical-statistics-ml-workbench
+    name: 医学科研统计与机器学习工作台
+    tagline: 帮助医学研究者衔接统计分析、机器学习与结果解释。
+    description: 当前处于概念共创阶段，正在梳理高频科研任务和可信分析流程。
+    status: 概念共创
+    status_key: concept
+    tags:
+      - 医学统计
+      - 机器学习
+    logo: /assets/img/content/default-cover.svg
+    logo_alt: 医学科研统计与机器学习工作台产品封面
+    product_url: ""
+    docs_url: ""
+    repository_url: ""
+    cta: 参与共创
+    featured: true
+    enabled: true
+
+  - id: clinical-experience-assistant
+    name: 医生病例与临床经验沉淀助手
+    tagline: 帮助医生把病例观察与临床经验沉淀为可复用的知识。
+    description: 当前处于概念共创阶段，重点探索合规、结构化和低负担的记录方式。
+    status: 概念共创
+    status_key: concept
+    tags:
+      - 临床知识
+      - 医生助手
+    logo: /assets/img/content/default-cover.svg
+    logo_alt: 医生病例与临床经验沉淀助手产品封面
+    product_url: ""
+    docs_url: ""
+    repository_url: ""
+    cta: 参与共创
+    featured: true
+    enabled: true
