@@ -18,7 +18,7 @@ function determineGiscusTheme() {
 
   let giscusAttributes = {
     src: "https://giscus.app/client.js",
-    "data-repo": "yirong-CEO/CardioMind-AILab.github.io",
+    "data-repo": "CardioMind-AI/CardioMind-AILab.github.io",
     "data-repo-id": "",
     "data-category": "Comments",
     "data-category-id": "",
